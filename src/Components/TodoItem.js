@@ -10,8 +10,4 @@ class TodoItem extends Component {
   }
 }
 
-TodoItem.propTypes = {
-  todo: React.PropType.object,
-}
-
 export default TodoItem;

@@ -8,7 +8,7 @@ class Todos extends Component {
     if (this.props.todos) {
       todoItems = this.props.todos.map(todo => {
         return (
-          <TodoItem key={todos.title} todo={todo} />
+          <TodoItem key={todo.title} todo={todo} />
         );
       });
     }
@@ -20,10 +20,6 @@ class Todos extends Component {
       </div>
     );
   }
-}
-
-Todos.propTypes = {
-  todos: React.PropTypes.array,
 }
 
 export default Todos;
